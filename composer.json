@@ -1,0 +1,6 @@
+{
+    "require": {
+        "bref/bref": "^1.7",
+        "twig/twig": "^3.4"
+    }
+}
