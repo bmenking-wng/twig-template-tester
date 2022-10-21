@@ -18,4 +18,11 @@ $twig = new Environment($loader);
 
 $vars = require('./params/' . $template . '.php');
 
+$vars['system'] = [
+    'request'=>[
+        'get'=>$_GET,
+        'post'=>$_POST
+    ]
+];
+
 echo $twig->render($template . '.twig', $vars);
